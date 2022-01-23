@@ -101,6 +101,11 @@ FCM.setAutoInit({ enabled: true }).then(() => alert(`Auto init enabled`));
 FCM.isAutoInitEnabled().then((r) => {
   console.log("Auto init is " + (r.enabled ? "enabled" : "disabled"));
 });
+
+// Delete token
+FCM.deleteToken().then((r) => {
+  console.log("Token deleted"));
+});
 ```
 
 ## Add Google config files

@@ -31,6 +31,11 @@ export interface FCMPlugin {
   deleteInstance(): Promise<boolean>;
 
   /**
+   * Remove firebase message token
+   */
+  deleteToken(): Promise<boolean>;
+
+  /**
    * Enabled/disabled auto initialization.
    * @param options
    */
